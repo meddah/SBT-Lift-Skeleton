@@ -1,13 +1,11 @@
 package bootstrap.liftweb
 
 import _root_.net.liftweb._
-import util._
-import common._
-import http._
-import http.provider.HTTPRequest
-import sitemap._
-import sitemap.Loc._
-import Helpers._
+import common.{Full, Empty, Box}
+import http.{LiftRules, S}
+import sitemap.{SiteMap, Menu, Loc}
+import Loc._
+import util.Props
 import mapper.{DB, ConnectionManager, Schemifier, DefaultConnectionIdentifier, ConnectionIdentifier}
 import _root_.java.sql.{Connection, DriverManager}
 
